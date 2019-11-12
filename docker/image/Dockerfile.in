@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 LABEL maintainer="packaging@loudml.io"
 EXPOSE 8077
 
-COPY --chown=_apt:root repo /repo
+#COPY --chown=_apt:root repo /repo
 COPY loudml-1.x.list /etc/apt/sources.list.d/loudml-1.x.list
 
 RUN apt-get update \
